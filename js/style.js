@@ -16,14 +16,14 @@ inputs.forEach((input) => {
   input.addEventListener("click", () => {
     let id = input.id;
     if (player == 1) {
+      document.getElementById(id).style.color = "#fff";
       document.getElementById(id).value = "X";
       document.getElementById(id).disabled = true;
-      document.getElementById(id).style.color = "#ffffff";
       player = 0;
     } else {
+      document.getElementById(id).style.color = "#000";
       document.getElementById(id).value = "O";
       document.getElementById(id).disabled = true;
-      document.getElementById(id).style.color = "#black";
       player = 1;
     }
 
